@@ -14,7 +14,7 @@ This is my solution to the **Testimonials Grid Section** challenge on Frontend M
 ## 🔗 Links
 
 * Solution URL: https://www.frontendmentor.io/solutions/your-solution-link
-* Live Site URL: https://your-live-site-url.com
+* Live Site URL: [https://your-live-site-url.com](https://talasadev.github.io/FrontendMentor-Testimonial-Section-Grid/)
 
 ---
 
