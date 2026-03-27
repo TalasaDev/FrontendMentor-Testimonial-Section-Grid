@@ -1,4 +1,4 @@
-/* COLORS */ 
+/* VARIABLES */ 
 
 :root { 
     --purple-50: hsl(260, 100%, 95%); 
@@ -13,6 +13,8 @@
     --black: hsl(0, 0%, 7%); 
 } 
 
+/* RESET */
+
 * { 
     padding: 0; 
     margin: 0; 
@@ -21,20 +23,40 @@
     font-family: 'Barlow Semi Condensed', sans-serif; 
 } 
 
+/* BASE */
+
 body { 
-    background-color: var(--grey-100); 
+    display: flex;           /* Adding proper page layout */
+    justify-content: center; /* recommended by AI  tools*/
+    align-items: center;
+    min-height: 100vh;    
 } 
+
+/* LAYOUT */
+
 main { 
+    background-color: var(--grey-100); 
     max-width: 375px; 
     margin-left: auto; 
     margin-right: auto; 
 } 
+
+/* COMPONENTS */
 .testimonial { 
     color: var(--white); 
     padding: 1rem 2.5rem 2.5rem 2.5rem; 
     margin-top: 2.5rem; 
-    border-radius: 3%;    
+    border-radius: 3%;  
+    /* adding polish details like smooth hover effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;  
 } 
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* VARIANTS */
+
 .daniel { 
     background-color: var(--purple-500); 
     margin-top: 5rem; 
@@ -103,8 +125,9 @@ main {
     margin-bottom: 5rem; 
 }
 
-/* TABLET DESIGN */
+/* MEDIA QUERIES */
 
+/* TABLET DESIGN */
 /* Adding a tablet breakpoint as per ChatGPT recommendations */
 
 @media screen and (min-width: 600px) {
@@ -215,6 +238,7 @@ main {
         margin-top: 0.5rem;
     }
 } 
+
 
 
 
